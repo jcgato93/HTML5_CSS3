@@ -1,0 +1,13 @@
+background-color:blue ; /*Establece color de fondo*/
+color: red;/*establece el color principal */
+se pueden utilizar diferenctes formas para indicar colores 
+
+1-por su nombre (red,blue,greem) hay 147 nombre de colores disponibles
+
+2-de forma hexadecimal :  #23AA53;
+
+3-por:  hsla(239, 45%, 22%, 0.4);
+
+4-por : rgba(123, 88, 9, 0.5); esta permire establecer opacidad o transparencia/entre menos opacidad sera mas transparente
+
+5-por : rgb(123,88,9); esta no maneja la opacidad

@@ -1,0 +1,134 @@
+/*--------------metodo abreviado para establecer imagen en CSS--------------------------*/
+
+p {
+  background: url("#") no-repeat right center;   //url dela imagen  /si se repite o no  / posicion;
+} 
+
+
+
+
+
+/*-----------------------Tamaño de la imagen cuando esta esta en el html para modificar desde CSS---------------------------------------*/
+Por ejemplo, podemos modificar las dimensiones de 
+una imagen utilizando el widthy heightpropiedades.
+
+
+img.X {              //hace referencia a todas las imagenes que utilicen la clase .x
+  width: 350px;
+  height: 200px; 
+}
+
+
+
+
+Las imágenes también pueden estar centrados, pero en primer lugar,
+su comportamiento por defecto deben ser cambiados. Por defecto, las
+imágenes son los elementos en línea. Para las imágenes para centrar 
+orrectamente, deben comportarse como elementos en bloque.
+
+img.leaf {
+  width: 300px;
+  height: 200px; 
+  display: block;    //se le da propiedad de bloque
+  margin: 0px auto;  //se establece el alto en 0px y los lados en forma utomatica para centrar
+}
+
+
+Para modificar el tamaño de una imagen de fondo, se puede utilizar la propiedad background-size.
+
+Este ejercicio se centrará en dos de los valores más comunes de la  propiedad background-size:
+
+.cover- Se expande la imagen lo más grande posible para cubrir todo el ancho o la altura de un contenedor. Si las dimensiones del recipiente (por ejemplo, un div) son más grandes que las dimensiones de la imagen, la imagen se distorsione. Este valor es el mejor para imágenes que no se comunican contenido importante para el usuario, como imágenes de fondo.
+.contain- Amplía la imagen lo más grande posible, pero será la imagen letterboxed , lo que significa que no va a cubrir todo el ancho o la altura de un contenedor.
+
+div.header {
+  height: 400px;
+  width: 100%;
+  background: url("#") no-repeat right center;
+  background-size: cover;
+}
+
+
+
+
+/* -------------imagen de fondo ----------------*/
+Las imágenes también se pueden añadir a los antecedentes
+ de los elementos HTML con la propiedad background-image.
+
+body {
+  background-image: url("https://www.example.com/leaf.jpg");
+}
+El background-image  se  puede ajustar a un valor de url().
+
+1. url()- contiene la dirección URL de la imagen, entre comillas dobles.
+
+
+Puede controlar la imagen de fondo se repite con la propiedad background-repeat.
+Esta propiedad puede tomar uno de cuatro valores:
+
+.repeat - El valor por defecto - la imagen se repetirá horizontal y verticalmente.
+.repeat-x - La imagen de fondo se repetirá sólo a lo largo del eje x (horizontal).
+.repeat-y - La imagen de fondo se repetirá sólo a lo largo del eje Y (verticalmente).
+.no-repeat - La imagen de fondo no se repetirá en absoluto y sólo aparecerá una vez.
+
+
+/*------------posicion de la imagen dentro de la caja-------------------*/
+
+Cuando una imagen de fondo no se repite, su posición puede ser modificada con la propiedad background-position.
+
+p {
+  background-image: url("#");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+Una imagen de fondo se posiciona usando una cuadrícula de 3 por 3 
+(tres filas, tres columnas), lo que significa que hay 9 posiciones posibles 
+para el total de la imagen:
+
+.left top - Esquina superior izquierdo de la caja del elemento.
+.center top - Centro de la parte superior de la caja del elemento.
+.right top - Esquina superior derecha de la caja del elemento.
+.left center - Columna de la izquierda, fila central.
+.center center - El centro de la caja del elemento.
+.right center - Columna derecha, fila central.
+.left bottom - Parte inferior izquierda esquina de la caja del elemento.
+.center bottom - Parte central inferior de la caja del elemento.
+.right bottom - Esquina inferior derecha de la caja del elemento.
+
+
+
+
+
+/*--------posicion de la imagen de forma interactiva------------------*/
+
+Con la propiedad background-attachment, se puede especificar si o no una
+imagen de fondo debe permanecer en una posición en la página web o si debe
+moverse hacia arriba y hacia abajo como el usuario se desplaza a través de una página web.
+
+La propiedad background-attachment puede tomar uno de dos valores:
+
+.scroll - Este valor permite que la imagen para moverse hacia arriba y hacia abajo como un usuario se desplaza en la página web (este es el valor por defecto).
+.fixed - Este valor pasadores de la posición de la imagen en la página.
+
+p {
+  background: url("#") no-repeat right center;
+  background-attachment: fixed;
+}
+
+
+
+
+
+/* ------------establecer un color de fondo en forma degradada----------------*/
+
+La propiedad background-image se puede establecer en el valor siguiente:
+
+-webkit-linear-gradient()- Este valor acepta dos argumentos: los dos colores del 
+gradiente lineal tendrán una transición hacia y desde. Los colores se suelen especificar como códigos de color hexadecimal.
+
+div.header {
+  height: 400px;
+  width: 400px;
+  background-image: -webkit-linear-gradient(#666CCC, #BC1324);
+}

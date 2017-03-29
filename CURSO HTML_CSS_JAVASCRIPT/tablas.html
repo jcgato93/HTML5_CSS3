@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tablas</title>
+</head>
+<body>
+
+<table><!--crea tabla-->
+   <tr><!--Crea Fila "row"-->
+     <th></th> <!--Crea emcabezado de un colomna "head"-->
+     <th>Company Name</th>
+     <th>Number of items to Ship</th>
+     <th>Next Action</th>
+   </tr>
+   <tr>
+     <th scope="col">titulo fila</th>
+     <td>Adam's Greenworks</td><!--crea contenido de una fila-->
+     <td>14</td>
+     <td>Package Items</td>
+   </tr>
+   
+  </table>
+
+
+</body>
+</html>
+
+
+
+Las filas no son suficientes para agregar datos a una tabla. Cada elemento de célula también se debe definir. En HTML, puede agregar datos mediante la tabla de datos elemento: <td>.
+
+
+Para añadir títulos a las filas y columnas, se puede utilizar el título de tabla elemento: <th>.
+
+
+Tenga en cuenta, también, el uso de la atributo 
+
+scope
+
+, que puede tomar uno de dos valores:
+
+row - Este valor deja claro que el título es para una fila.
+col - Este valor deja claro que el encabezamiento es para una columna.
+
+
+
+<!--cuando un td abarca barias columnas-->
+¿Qué pasa si la tabla contiene datos que abarca varias columnas?
+
+Por ejemplo, un calendario personal podría tener eventos que abarcan a través de múltiples horas, o incluso varios días.
+
+Los datos pueden abarcar columnas utilizando el atributo colspan. Los atributos acepta un número entero (mayor que o igual a 1) para denotar el número de columnas que se extiende a través.
+
+<table>
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+  </tr>
+  <tr>
+    <td colspan="2">Out of Town</td>
+    <td>Back in Town</td>
+  </tr>
+</table>
+
+
+
+<!--cuando un td abarca barias filas-->
+Los datos también pueden abarcar varias filas utilizando el atributo. rowspan
+
+El rowspan se utiliza para los datos que se extiende por varias filas (tal vez un evento se prolonga durante varias horas en un día determinado). Se acepta un número entero (mayor que o igual a 1) para denotar el número de filas que se extiende a través.
+
+<table>
+  <tr> <!-- Row 1 -->
+    <th></th>
+    <th>Saturday</th>
+    <th>Sunday</th>
+  </tr>
+  <tr> <!-- Row 2 -->
+    <th>Morning</th>
+    <td rowspan="2">Work</td>
+    <td rowspan="3">Relax</td>
+  </tr>
+  <tr> <!-- Row 3 -->
+    <th>Afternoon</th>
+  </tr>
+  <tr> <!-- Row 4 -->
+    <th>Evening</th>
+    <td>Dinner</td>
+  </tr>
+</table>
+
+
+
+<!--Caundo una tabla tiene muchos datos (para mejorar su visibilidad y manejo)-->
+
+Con el tiempo, una mesa puede llegar a contener una gran cantidad de datos y llegar a ser muy largo. Cuando esto sucede, la tabla puede ser seccionada de manera que es más fácil de manejar.
+
+Mesas largas pueden ser dividido en partes usando el cuerpo de la tabla elemento: <tbody>.
+
+El <tbody>elemento debe contener todos los datos de la tabla, con exclusión de los encabezados de la tabla (más sobre esto en un ejercicio posterior).
+
+
+
+Cuando el cuerpo de una tabla está seccionada, sin embargo, también tiene sentido separar la parte de las partidas de la tabla utilizando el <thead>elemento.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Morning</th>
+      <td rowspan="2">Work</td>
+      <td rowspan="3">Relax</td>
+    </tr>
+    <tr>
+     <th>Afternoon</th>
+    </tr>
+    <tr>
+      <th>Evening</th>
+      <td>Dinner</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!--footer o piede de las tablas -->
+
+La parte inferior de una larga mesa también puede ser seccionado utilizando el <tfoot>elemento.
+
+<table>
+  <thead>
+    <tr>
+      <th>Quarter</th>
+      <th>Revenue</th>
+      <th>Costs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Q1</th>
+      <td>$10M</td>
+      <td>$7.5M</td>
+    </tr>
+    <tr>
+      <th>Q2</th>
+      <td>$12M</td>
+      <td>$5M</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Total</th>
+      <td>$22M</td>
+      <td>$12.5M</td>
+    </tr>
+  </tfoot>
+</table>

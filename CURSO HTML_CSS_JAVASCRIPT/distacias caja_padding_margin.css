@@ -1,0 +1,125 @@
+/*---------------padding   distancia interna de la caja-----------*/
+Para establecer la distacia que hay dentro del contenido de las cajas hacia 
+el borde de estas 
+ 
+ p {
+  
+  padding: 5px; // la misma distancia en todos sus lados 
+}
+
+
+p {
+  
+  padding: 5px 10px 5px 10px;  // para distancias diferentes en cada lado
+}
+
+p {
+  padding: 5px 10px; //podemos colocar alto y ancho si son iguales
+}
+
+/*---------------------------------------------------------------------*/
+Si quieres ser aún más específico acerca de la cantidad de relleno en
+cada lado del contenido de una caja de texto, puede utilizar las siguientes propiedades:
+
+padding-top    //arriba
+padding-right  //derecha
+padding-bottom  //abajo
+padding-left    //izquierda
+
+p {
+  border: 3px solid #2D3FA3;
+  padding-bottom: 10px;  
+}
+
+
+/*------------margin   distancia fuera de la caja ----------------------*/
+
+El margen se refiere al espacio directamente fuera de la caja. Puede ajustar esta separación con la marginpropiedad.
+p {
+  
+  margin: 20px; // el margen sera igual en todos los lados de la caja
+}
+
+p {
+  margin: 6px 12px 6px 12px;  //para establecer el margen en cada lado
+}
+
+p {
+  margin: 6px 12px;   //margen de alto y ancho
+}
+
+
+Si quieres ser aún más específico acerca de la cantidad de margen
+a cada lado de una caja, puede utilizar las siguientes propiedades:
+
+margin-top    //arriba 
+margin-right  // derecha
+margin-bottom  //abajo
+margin-left    //izquierda
+
+
+para que los elementos se sentren automaticamente en relacion al espacio que los redea 
+se puede usar  
+
+div.headline {
+  margin: auto;   //  auto  , centra automaticamente 
+}
+
+
+/*---------------------------Elemento de linea  ---------------------------------*/
+
+1-Los elementos en línea - los elementos que se muestran en línea con el texto, 
+sin interrumpir el flujo del texto (como enlaces).
+
+2-Elementos en bloque - los elementos que utilizan una línea entera de espacio 
+en una página Web e interrumpen el flujo natural del texto. La mayor parte de los 
+elementos comunes de HTML son elementos de bloque (encabezados, párrafos, divs, y más).
+
+La modificación de la displaypropiedad de un elemento puede ayudar a
+lograr un diseño deseado para una página web. La displaypropiedad puede tomar uno de cuatro 
+valores:
+
+.inline - Hace que los elementos en bloque (como un div) a comportarse como un elemento en línea (como un enlace).
+.block - Hace que los elementos en línea (como un enlace) a comportarse como un elemento de bloque (como un div).
+.inline-block - Hace que los elementos en bloque a comportarse como un elemento en línea, pero conservan las características de un elemento a nivel de bloque.
+.none- Elimina un elemento de la vista. El resto de la página web actuará como si el elemento no existe.
+
+li {
+  display: inline;
+}
+
+/*-------------------------Visibilidad de los elementos -------------------------*/
+
+Los elementos pueden ser ocultos a la vista con la visibilitypropiedad.
+
+La visibilitypropiedad se puede establecer en uno de los siguientes valores:
+
+.hidden - Esconde un elemento.
+.visible - Muestra un elemento.
+
+.future {
+  visibility: hidden;
+}
+
+.future {
+  visibility: visible;
+}
+
+
+
+/*------------sumar el borde con el tamaño de la caja------------------------------*/
+el modelo de caja que asumen los navegadores. En CSS, la propiedad box-sizing controla
+el tipo de modelo de caja el navegador debe utilizar en la interpretación de una página web.
+
+El valor predeterminado de esta propiedad es content-box. 
+Este es el mismo modelo de caja que se ve afectado por el espesor de la frontera y el relleno.
+
+* {
+  box-sizing: border-box;   // para reestablecer el modelo de la caja 
+}
+
+1 -el modelo de caja por defecto, dimensiones de la caja son afectados por grosor del borde y el relleno.
+2 -La propiedad box-sizing controla el modelo de caja utilizado por el navegador.
+3 -El valor predeterminado de la propiedad box-sizing es content-box.
+4 -El valor para el nuevo modelo de caja es border-box.
+5 -El border-boxmodelo no se ve afectada por el espesor de la frontera o el relleno.

@@ -1,0 +1,18 @@
+/*selector universal*/
+*{
+      font-family: 'Georgia','Times','serif';
+}
+ 
+/*selectores de etiqueta*/
+a{
+      color:SeaGreen text-decoration:none;
+}
+   
+
+img{
+      border-redius:100%;
+}
+
+h1,p{
+	font-family: Arial;
+   }

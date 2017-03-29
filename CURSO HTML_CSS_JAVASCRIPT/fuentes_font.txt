@@ -1,0 +1,74 @@
+para cambiar la fuente es :
+
+font-family: Arial;
+
+
+
+para manejar reservas de fuentes en caso de que no se utilice google fonts 
+
+font-family:Arial ,Georgia, serif;    // serif  son las letras con mas detalles     //sans-serif  letras con menos detalles 
+
+
+
+para el tamaño de las letras 
+
+font-size: 12px; //se maneja por pixeles 
+
+font-size: 1.5em;  //se maneja por "em"
+
+font-size:  200%;  // se maneja por porcentajes
+
+
+
+para manejar en espacio entre lineas de texto
+
+line-height: 1.5em; //por "em"   se recomienda que se en "em"
+
+line-height: 12px;  //por pixeles 
+
+
+
+Espacio entre palabras //se suele utilizar para separar un poco lo que se escribe en negrita para que sea mas legible
+
+word-spacing: 0.3em;
+
+
+
+Espacio entre letras individuales // para separar o acortar espacio entre letras 
+
+ letter-spacing: 0.3em;
+
+
+
+ Los pesos de fuentes se pueden configurar para 100, (fina) 
+ 200, 300, 400(peso normal)
+ 500, 600, 700, 800, o 900(en negrita).
+ para cambiarlo directamente en el "link"
+ ejemplo:   <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+
+para manejar el peso o grosor de la fuente se usa :
+ font-weight: bold;  // puede usarse directamente la instruccion de negrita , o alguno de los valores anteriores 
+
+
+
+ para poner en cursiva // se usa mucho en citas , es decir palabras de otro autor 
+
+ font-style: italic;
+
+
+
+ para poner en mayuscula o minusculas
+
+   text-transform: uppercase;    //mayusculas 
+     text-transform: lowercase;  //minusculas 
+
+
+
+
+para alinear el texto  al lado que se necesite 
+
+text-align: right;
+
+left - Alinea el texto a la izquierda del navegador.
+center - Centros de texto.
+right - Alinea el texto a la derecha del navegador.     

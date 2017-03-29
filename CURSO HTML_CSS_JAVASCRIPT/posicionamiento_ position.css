@@ -1,0 +1,77 @@
+La posición por defecto de un elemento se puede cambiar mediante el establecimiento de su positionpropiedad.
+La positionpropiedad puede tomar uno de cuatro valores:
+
+.static - El valor por defecto (que no necesita ser especificada)
+.relative
+.absolute
+.fixed     //fijo  , no cambia de posicion apezar de recorrer la pagina
+
+div.description {
+  background-color: #1D09AF;
+  width: 50px;
+  height: 50px;
+  position: relative;   //POSICION RELATIVA
+  top: 200px;
+}
+
+
+
+
+
+/*--------------z-index    orden de posiciones en la pagina--------------------------------*/
+Los controles z-index de propiedades hasta qué punto "atrás" o qué tan lejos
+"hacia adelante" un elemento deben aparecer en la página web.
+
+La propiedad z-index acepta valores enteros. En función de sus valores,
+los números enteros indican al navegador en el orden en que los elementos se deben mostrar en la página web.
+
+div.navigation {
+ 
+  z-index: 1;   //con exte se establece que aparecera por delante de los demas , en caso de que una caja tenga una position:fixed;
+}
+
+
+
+/*--------------float-------------------*/
+La floatpropiedad se puede establecer en uno de dos valores:
+
+.left - Este valor se moverá, o flotar, elementos tan a la izquierda como sea posible.
+.right - Este valor se moverá elementos tan a la derecha como sea posible.
+
+div.block {
+  width: 100px;
+  float: left;
+}
+elementos flotantes deben tener una anchura especificada,
+como en el ejemplo anterior. De lo contrario, el elemento 
+asumirá el ancho de su elemento que contiene, y tratar de flotar
+del elemento pueden no dió ningún resultado visibles.
+
+
+
+
+
+La propiedad float también puede ser usado para flotar varios elementos a la vez. 
+Cuando varios elementos flotantes tienen diferentes alturas, sin embargo, esto puede 
+afectar a su disposición en la página. En concreto, los elementos pueden "chocar" entre sí y 
+no permitir que otros elementos que se muevan con la izquierda o la o la derecha.
+
+Ajuste de la propiedad .clear de un elemento le permite especificar cómo deben 
+comportarse los elementos cuando chocan entre sí en la página.
+
+La propiedad .clear especifica cómo deben comportarse los elementos cuando chocan 
+entre sí en la página. Se puede tomar uno de los valores siguientes:
+
+.left - El lado izquierdo del elemento no tocará cualquier otro elemento dentro del mismo elemento que contiene.
+.right - El lado derecho del elemento se nottouch cualquier otro elemento dentro del mismo elemento que contiene.
+.both - Ninguna de las partes del elemento tocará cualquier otro elemento dentro de un mismo elemento que contiene.
+.none - El elemento puede tocar cualquiera de los lados.
+
+div {
+  width: 200px;
+  float: left;
+}
+
+div.special {
+  clear: left;  //el lado izquierdo del elemento no tocara otro
+}

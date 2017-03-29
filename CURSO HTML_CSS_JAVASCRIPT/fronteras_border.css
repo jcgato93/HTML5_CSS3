@@ -1,0 +1,89 @@
+1-Puede estilo de los bordes de la caja de un elemento.
+2-La border-widthpropiedad le permite ajustar el espesor o la anchura, de una frontera.
+3-La border-stylepropiedad le permite cambiar el estilo de la frontera utilizado.
+4-La border-colorpropiedad le permite cambiar el color de un borde.
+5-El ajuste individual de estilo, grosor y color de una frontera puede hinchar código. Es más eficaz utilizar la taquigrafía borderpropiedad y especificar las tres propiedades a la vez, en ese orden.
+6-Bordes del cuadro no tienen que ser cuadrados. Sus esquinas se pueden redondear con la border-radiuspropiedad.
+
+
+/*-------Establecer propiedades del borde de forma abreviada*/
+
+div.container {
+
+  border: 3px solid #FFF;  /tamaño   estilo   color/
+}
+
+
+
+
+/*--------Forma del borde--------------------------------------------------------------*/
+No es posible ver la frontera de una casilla si la frontera de estilo no se ha establecido. 
+El estilo de un borde se puede establecer con la propiedad border-style. Esta propiedad puede
+tomar uno de los valores siguientes:
+
+.solid - Frontera es una línea continua.
+.dashed - Borde es una serie de líneas o rayas.
+.dotted - Borde es una serie de puntos cuadrados.
+.double - Borde son dos líneas negras continuas.
+.groove - Frontera es una ranura (o talla).
+.inset - Borde aparece a cortar en la pantalla.
+.outset - Borde aparece a salir de la pantalla.
+.ridge - Borde aparece como un marco de imagen.
+.hiddeno none- ninguna frontera.
+
+div {
+  border-style: solid;
+}
+
+
+/*---------------Anchura del borde----------------------------------------------------------*/
+para establecer el grosor de las lineas del borde se utiliza border-width
+
+
+p {
+ 
+  border-width: 5px;
+}
+
+se maneja en pixeles o con de la siguiente manera 
+.thin
+.medium
+.thick 
+
+si se desea establecer un grosor diferente en cada lado del borde 
+
+p{
+	border-width:5px 10px 3px 4px; va en sentido del reloj para referirce a cada lado   //se puede utilizar para dar efectos de profundidad   
+}
+
+Si desea ser aún más específico sobre el ancho de diferentes lados de la frontera, se pueden utilizar las siguientes propiedades
+
+border-top-width: 4px;  //arriba
+border-right-width: 2px  //derecha
+border-bottom-width: 4px //abajo
+border-left-width: 2px // izquierda
+
+
+/*-------------Color de Borde -------------------------------------------------------------------*/
+El border-colorestablecimiento acepta colores en los diversos formatos 
+sobre los cuales aprendiste anteriores: nombrado colores RGB (a) colores y colores hexagonales.
+Es común el uso de colores hexagonales de las fronteras, pero también es probable que venir a través de RGB (a) colores también.
+
+.container div {
+
+  border-color: rgb(22, 77, 100);
+}
+
+
+/*--------- Cambiar Forma del borde ----------*/
+NO TIENE QUE SER CUADRADO, PODEMOS DARLE UNA CURVA A LAS ESQUINAS
+
+Las esquinas del cuadro de borde de un elemento se pueden modificar con la border-radiuspropiedad.
+div.container {
+  border: 3px solid rgb(22, 77, 100);
+  border-radius: 5px;
+}
+
+Puede crear una frontera que es un círculo perfecto
+ajustando el radio igual a la altura de la caja: 100%.
+

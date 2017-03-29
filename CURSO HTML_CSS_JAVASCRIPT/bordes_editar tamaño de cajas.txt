@@ -1,0 +1,28 @@
+ 
+
+width:200px;   //para definir el ancho    maneja px, em , %
+height:100px;  //para definir el alto     maneja px,em,%
+
+
+
+
+para definir altura y ancho   minimos y maximos   //se usa para el responsive designe
+
+
+  min-width:200px;
+  max-width:800px;
+  min-height:100px;
+  max-height:200px;
+
+  
+
+
+
+overflow
+La overflowpropiedad controla lo que ocurre con el contenido cuando se derrama o se desborda , fuera de su caja. Se puede establecer en uno de los siguientes valores:
+
+hidden - Cuando se establece en este valor, cualquier contenido que se desborda se oculta a la vista.
+
+scroll - Cuando se establece en este valor, una barra de desplazamiento se añadirá a la caja del elemento para que el resto del contenido se puede ver por el desplazamiento.
+
+
